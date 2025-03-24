@@ -1,0 +1,7 @@
+.triangle {
+    clip-path: polygon(0 2%, 0% 100%, 100% 100%);
+    border-top-right-radius: -100px;
+    width: 100px;
+    background-color: rebeccapurple;
+    aspect-ratio: 1/1;
+}

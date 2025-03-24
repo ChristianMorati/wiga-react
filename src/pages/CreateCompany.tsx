@@ -151,7 +151,6 @@ const CreateCompany: React.FC = () => {
 
     return (
         <>
-
             <div className="max-w-4xl mx-auto m-2 p-4 bg-white rounded-xl">
                 <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">Criar Empresa</h1>
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
