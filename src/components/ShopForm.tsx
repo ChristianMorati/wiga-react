@@ -10,11 +10,11 @@ type ShopFormData = {
 function ShopForm() {
   const { register, handleSubmit, formState: { errors } } = useForm<ShopFormData>({ mode: "onChange" });
   const navigate = useNavigate();
-  const { name } = useCompanyStore();
+  const { id, name } = useCompanyStore();
 
   const onSubmit: SubmitHandler<ShopFormData> = async (data) => {
     console.log("Form Submitted", data);
-    navigate("/my-shop");
+    navigate(`/${id}/my-shop`);
   };
 
   return (

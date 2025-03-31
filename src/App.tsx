@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import CreateCompany from "./pages/CreateCompany";
 import Dashboard from "./pages/Dashbord";
 import ShopForm from "./components/ShopForm";
+import MyProducts from "./components/dashboard/store/MyProducts";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         } />
         <Route path="/create-shop" element={<ShopForm />} />
         <Route path="/:companyId/my-shop/" element={<Dashboard />} />
+        <Route path="/:companyId/my-shop/products" element={<MyProducts />} />
         <Route path="*" element={<h1>Not Found</h1>} />
       </Routes>
     </>

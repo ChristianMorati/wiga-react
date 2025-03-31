@@ -1,7 +1,20 @@
 @import "tailwindcss";
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+@import 'react-tooltip/dist/react-tooltip.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 hr {
   border-top: 1px solid #e2e8f0;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+body {
+  user-select: none;
 }
